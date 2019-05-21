@@ -1,4 +1,4 @@
-package com.zkr.study.java.thread;
+package com.zkr.study.java.jdk_concurrent_3.synchronous_control_3_1;
 
 import java.util.concurrent.locks.ReentrantLock;
 

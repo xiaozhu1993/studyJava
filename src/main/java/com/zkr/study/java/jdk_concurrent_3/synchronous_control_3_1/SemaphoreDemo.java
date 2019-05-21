@@ -1,4 +1,4 @@
-package com.zkr.study.java.thread;
+package com.zkr.study.java.jdk_concurrent_3.synchronous_control_3_1;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -44,10 +44,10 @@ public class SemaphoreDemo implements Runnable {
         for (int i = 0; i < nThreads; i++) {
             executorService.submit(semaphoreDemo);
         }
-        int status = 0;
         while (true) {
             if (flag) {
-                System.exit(status);
+                executorService.shutdown();
+                return;
             }
         }
     }
