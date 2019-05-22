@@ -45,7 +45,7 @@ public class ReadWriteLockDemo {
         Runnable readRunnable = () -> {
             try {
                 Object result = readWriteLockDemo.handleRead(readLock);
-//                Object result = readWriteLockDemo.handleRead(lock);
+//                Object result = readWriteLockDemo.handleRead(lock_4);
                 System.out.println(result);
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -58,7 +58,7 @@ public class ReadWriteLockDemo {
                 int i = new Random().nextInt(bound);
                 System.out.println("write: " + i);
                 readWriteLockDemo.handleWrite(writeLock, i);
-//                readWriteLockDemo.handleWrite(lock, i);
+//                readWriteLockDemo.handleWrite(lock_4, i);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

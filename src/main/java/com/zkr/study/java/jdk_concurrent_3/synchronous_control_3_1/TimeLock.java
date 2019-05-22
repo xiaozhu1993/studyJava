@@ -19,7 +19,7 @@ public class TimeLock implements Runnable {
             if (lock.tryLock(timeout, TimeUnit.SECONDS)) {
                 Thread.sleep(10000);
             } else {
-                System.out.println("get lock failed");
+                System.out.println("get lock_4 failed");
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
