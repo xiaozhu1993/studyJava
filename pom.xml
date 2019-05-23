@@ -35,7 +35,19 @@
             <artifactId>guava</artifactId>
             <version>27.1-jre</version>
         </dependency>
-
+        <!-- jmh-core -->
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-core</artifactId>
+            <version>1.20</version>
+        </dependency>
+        <!-- jmh-generator-annprocess -->
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-generator-annprocess</artifactId>
+            <version>1.20</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>
